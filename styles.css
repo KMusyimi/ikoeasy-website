@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+:root {
+  --green: #46973b;
+  --light-green: hsla(152, 100%, 83%, 0.2);
+  --black: #111111;
+  --white: #ffffff;
+  --grey: #5d6063;
+  --orange: #c9951c;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+  padding: unset;
+  margin: unset;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 738;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+a:hover {
+  color: #46973b;
+  transition: color linear 100ms;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.container > main,
+.container > header,
+.container > footer > div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 738;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+.logo img {
+  width: 40px;
+  padding-right: 0.5em;
+}
+
+.header {
+  text-align: center;
+  padding-block: 1.5em;
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.25em;
+}
+
+.header p {
+  color: var(--grey);
+}
+
+.header .nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.header .nav_container .menu_icon {
+  cursor: pointer;
+  width: 23px;
+}
+
+.header .nav_container .nav,
+.header .nav_container .btn {
+  display: none;
+}
+
+.header .nav_container .nav .active {
+  color: var(--green);
+}
+
+.main .card {
+  border-radius: 0.75em;
+  background-color: var(--green);
+  color: var(--white);
+  margin-bottom: 1.5em;
+}
+
+.main .card figure {
+  max-width: 100%;
+}
+
+.main .card figure img {
+  border-radius: 0.75em 0.75em 0 0;
+}
+
+.main .card .card_text {
+  width: 95%;
+  padding: 1.05em;
+}
+
+.main .card .card_text h1 {
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+.main .card .card_text p,
+.main .card .card_text a {
+  font-size: 0.85rem;
+}
+
+.main .card .card_text p {
+  margin-bottom: 1em;
+}
+
+.main .card .card_text .link_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.main .card .card_text .link_wrapper::after {
+  display: block;
+  content: '';
+  margin-left: 0.45em;
+  background-image: url(assets/images/4829869_arrow_next_right_icon.svg);
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+}
+
+.main .sec_sect figure {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.85em;
+}
+
+.main .sec_sect figure img {
+  border-radius: 0.75em;
+}
+
+.main .sec_sect h1,
+.main .sec_sect p {
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main .sec_sect h1 {
+  margin-bottom: 0.45em;
+}
+
+.main .sec_sect p {
+  color: var(--grey);
+  margin-bottom: 1.25em;
+  font-size: 0.85rem;
+}
+
+.main .sec_sect .icon {
+  width: 65px;
+  margin: 0 auto;
+}
+
+.main .sec_sect + section header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.main .sec_sect + section header h3 {
+  color: var(--orange);
+  font-size: 1rem;
+  font-weight: 500;
+  padding-right: 1.15em;
+}
+
+.main .sec_sect + section header figure {
+  width: 25px;
+  rotate: -90deg;
+}
+
+.main .sec_sect + section h1 {
+  margin-bottom: 0.55em;
+}
+
+.main .sec_sect + section > p {
+  font-size: 0.85rem;
+  margin-bottom: 1em;
+}
+
+.main .sec_sect + section .card_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.main .sec_sect + section .card_wrapper .card {
+  flex: 0 1 155px;
+  text-align: center;
+  padding: 0.85em;
+}
+
+.main .sec_sect + section .card_wrapper .card .bold_txt {
+  display: block;
+  font-weight: 700;
+}
+
+.main .sec_sect + section .card_wrapper .card:nth-child(even) {
+  background-color: var(--orange);
+}
+
+.main .sec_sect + section ul {
+  border-top: 1.2px solid var(--grey);
+  margin-bottom: 2.5em;
+}
+
+.main .sec_sect + section ul li {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding-block: 1em;
+  font-weight: 500;
+  border-bottom: 1.2px solid var(--grey);
+}
+
+.main .sec_sect + section ul li .count {
+  display: inline-block;
+  font-weight: 700;
+  border: 1.2px solid var(--grey);
+  padding: 0.5em;
+  border-radius: 50%;
+  width: 40px;
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--light-green);
+  padding: 1.25em;
+}
+
+.footer > div .logo {
+  margin-bottom: 0.85em;
+}
+
+.footer > div > div:first-of-type {
+  margin-bottom: 1.5em;
+}
+.footer > div > div:first-of-type p {
+  margin-bottom: 0.65em;
+}
+
+.footer h4 {
+  margin-bottom: 0.85em;
+}
+
+.footer .profile nav ul {
+  margin-bottom: 1em;
+}
+
+.footer .profile nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.8em;
+}
+
+.footer .profile nav ul li svg {
+  width: 20px;
+}
+
+.footer .socials nav ul {
+  display: flex;
+  align-items: center;
+  gap: 0.85em;
+  margin-bottom: 1em;
+}
+
+.footer .socials nav ul li a {
+  border: 1px solid #000;
+  text-align: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.footer .socials nav ul li img {
+  padding: 0.65em;
+}
+.footer > .footer_container .terms_text,
+.footer > .footer_container .copyright_text {
+  font-size: 0.85rem;
+}
+@media only screen and (min-width: 600px) {
+  .container > main,
+  .container > header,
+  .container > footer > div {
+    width: min(80%, 635px);
+  }
+  .footer > .footer_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 1fr 30px;
+    column-gap: 0.35em;
+    grid-template-areas:
+      'address profile socials'
+      'terms - copyrights';
+  }
+  .footer > .footer_container .div:first-of-type {
+    grid-area: address;
+  }
+  .footer > .footer_container .profile {
+    grid-area: profile;
+  }
+  .footer > .footer_container .socials {
+    grid-area: socials;
+  }
+  .footer > .footer_container .terms_text {
+    grid-area: terms;
+  }
+  .footer > .footer_container .copyright_text {
+    grid-area: copyrights;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .container > main,
+  .container > header,
+  .container > footer > div {
+    width: 85%;
+  }
+  .logo {
+    font-size: 1.65rem;
+  }
+
+  .logo img {
+    width: 45px;
+  }
+
+  .main .sec_sect h1,
+  .main .sec_sect p {
+    width: 75%;
+  }
+  .header {
+    padding-block: 2.25em;
+    margin-bottom: 3em;
+  } 
+  .header h1,  .header > p{
+    width: 75%;
+    margin: 0 auto 0.85em;
+  }
+  .header h1 {
+    font-size: 2.25rem;
+  }
+
+  .header .nav_container {
+    margin-bottom: 3em;
+  }
+
+  .header .nav_container .menu_icon {
+    display: none;
+  }
+
+  .header .nav_container .nav,
+  .header .nav_container .nav ul {
+    display: flex;
+  }
+  .header .nav_container .nav ul {
+    gap: 1em;
+  }
+
+  .header .nav_container .btn {
+    font-family: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+      'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    background-color: inherit;
+    display: block;
+    border: 1.35px solid var(--grey);
+    padding: 0.65em 1.25em;
+    border-radius: 1.6em;
+  }
+
+  .header .nav_container .btn:hover {
+    background-color: var(--green);
+    color: var(--white);
+    border-color: transparent;
+    transition: all 200ms linear;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    column-gap: 1.5em;
+    grid-template-areas:
+      'card sec_card sec_card2'
+      'sec_sect sec_sect sec_sect';
+  }
+  .main .card {
+    grid-area: card;
+  }
+  .main .card .card_text .link_wrapper:has(> :hover) a,
+  .main .card .card_text .link_wrapper:has(> :hover) {
+    color: var(--white);
+    scale: 1.01;
+    transition: scale 200ms ease-out;
+  }
+  .main section:nth-child(2) {
+    grid-area: sec_card;
+  }
+  .main .sec_sect:nth-child(3) {
+    grid-area: sec_card2;
+  }
+  .main .secondary {
+    grid-area: sec_sect;
+  }
+
+  .main .secondary h1 {
+    font-size: 2.25rem;
+    text-align: center;
+  }
+  .main .sec_sect + section h1 {
+    margin-bottom: 0.85em;
+  }
+
+  .main .sec_sect + section > p {
+    width: 75%;
+    font-size: 1rem;
+    margin: 0 auto 1.35em;
+  }
+
+  .main .sec_sect + section .card_wrapper {
+    gap: 1.85em;
+  }
+
+  .main .sec_sect + section .card_wrapper .card {
+    flex-grow: 1;
+    padding: 3em 2em;
+  }
+  .footer > div .logo {
+    margin-bottom: 0.25em;
+  }
+}
