@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- link: https://kmusyimi.github.io/ikoeasy-website/-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,138 +11,184 @@
 
 <body>
     <div class="container">
+        <svg style="display: none;">
+            <symbol id="arrow" viewBox="0 0 32 32">
+                <path
+                    d="M22,9a1,1,0,0,0,0,1.42l4.6,4.6H3.06a1,1,0,1,0,0,2H26.58L22,21.59A1,1,0,0,0,22,23a1,1,0,0,0,1.41,0l6.36-6.36a.88.88,0,0,0,0-1.27L23.42,9A1,1,0,0,0,22,9Z"
+                    fill="currentColor" />
+            </symbol>
+        </svg>
         <header class="header">
-            <div class="nav_container">
-                <div class="logo"><img src="assets/images/8542511_tractor_agriculture_icon.svg"
-                        alt="IKOEasy logo image">IKOEasy</div>
-                <div class="menu_icon"><img src="assets/images/134216_menu_lines_hamburger_icon.svg"
-                        alt="hamburger icon image"></div>
-                <nav class="nav">
-                    <ul>
-                        <li><a class="active" href="#" target="_self" rel="noopener noreferrer">Home</a></li>
-                        <li><a href="#" target="_self" rel="noopener noreferrer">About us</a></li>
-                        <li><a href="#" target="_self" rel="noopener noreferrer">Our Services</a></li>
-                        <li><a href="#" target="_self" rel="noopener noreferrer">Blog</a></li>
-                        <li><a href="#" target="_self" rel="noopener noreferrer">Shop</a></li>
-                        <li><a href="#" target="_self" rel="noopener noreferrer">Contact us</a></li>
-                    </ul>
-                </nav>
-                <button class="btn">Get Started</button>
+            <div class="logo">
+                <img src="assets/images/8542511_tractor_agriculture_icon.svg"
+                    alt="IKOEasy logo image"><span>IKOEasy</span>
             </div>
-            <h1>Easy access to affordable and eco-friendly farming equipment</h1>
-            <p>Our e-commerce platform aims to connect these farmers with suppliers of sustainable and efficient farming
-                tools, machinery and the current technologies.</p>
-
+            <div class="menu_icon"><img src="assets/images/134216_menu_lines_hamburger_icon.svg"
+                    alt="hamburger icon image">
+            </div>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item active"><a href="#" class="nav_link" rel="noreferrer noopener">Home</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link" rel="noreferrer noopener">About Us</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link" rel="noreferrer noopener">Our Services</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link" rel="noreferrer noopener">Blog</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link" rel="noreferrer noopener">Shop</a></li>
+                </ul>
+            </nav>
+            <button class="btn">Get Started</button>
         </header>
-        <main class="main">
-            <section class="card">
-                <figure class="card_img">
-                    <img src="assets/images/robert-wiedemann-FJGZFxtQWko-unsplash.jpg" alt="combined harvester image">
-                </figure>
-                <div class="card_text">
-                    <h1>Cultivating Growth Through Modern Agricultural Equipment</h1>
-                    <p>We offer services that aim to connect these farmers with suppliers of sustainable and efficient
-                        farming tools, machinery and the
-                        current technologies.</p>
-                    <div class="link_wrapper">
 
-                        <a class="learn_more" href="#" target="_blank" rel="noopener noreferrer">Learn More</a>
-                    </div>
+        <main class="main">
+            <section class="sect_main">
+                <h1>Easy access to affordable and eco-friendly farming equipment</h1>
+                <p>Our e-commerce platform aims to connect these farmers with suppliers of sustainable and efficient
+                    farming tools, machinery and the current technologies.</p>
+                <div class="card__wrapper">
+
+                    <article class="card selected">
+                        <figure class="card_img">
+                            <img src="assets/images/robert-wiedemann-FJGZFxtQWko-unsplash.jpg"
+                                alt="combined harvester image">
+                        </figure>
+                        <section class="card_main">
+                            <h3>Cultivating Growth Through Modern Agricultural Equipment</h3>
+                            <p>We offer services that aim to connect these farmers with suppliers of sustainable and
+                                efficient
+                                farming tools, machinery and the
+                                current technologies.</p>
+                            <div class="link_wrapper">
+                                <a class="learn_more" href="#" target="_blank" rel="noopener noreferrer">Learn More</a>
+                            </div>
+                        </section>
+                    </article>
+
+                    <article class="card">
+                        <section class="card_main">
+                            <figure>
+                                <img class="icon"
+                                    src="assets/images/4071401_farming_science_technology_future of farming_agriculture_icon.svg"
+                                    alt="farming science technology future image">
+                            </figure>
+                            <h3>Ecological Farming</h3>
+                            <p>We empower farmers to improve their yields hence high productivity while minimizing
+                                environmental
+                                impact.</p>
+                        </section>
+                        <figure class="card_img">
+                            <img src="assets/images/tim-mossholder-xDwEa2kaeJA-unsplash.jpg"
+                                alt="farmers harvesting image">
+                        </figure>
+                    </article>
+
+                    <article class="card">
+                        <figure class="card_img">
+                            <img src="assets/images/james-baltz-yihX4Rq-JsI-unsplash.jpg" alt="watering plants image">
+                        </figure>
+                        <section class="card_main">
+                            <figure>
+                                <img class="icon"
+                                    src="assets/images/7097370_conservation_grow_sustainable_hands_tree_icon.svg"
+                                    alt="conservation grow sustainable hands tree image">
+                            </figure>
+                            <h3>Quality Products</h3>
+                            <p>We ensure that small–scale farmers across Kenya and Africa have access to affordable,
+                                quality and eco-friendly farming equipment.</p>
+                        </section>
+                    </article>
                 </div>
             </section>
-            <section class="sec_sect">
-                <figure>
-                    <img class="icon" src="assets/images/4071401_farming_science_technology_future of farming_agriculture_icon.svg"
-                        alt="farming science technology future image">
-                </figure>
-                <h1>Ecological Farming</h1>
-                <p>We empower farmers to improve their yields hence high productivity while minimizing environmental
-                    impact.</p>
-                <figure class="card_img">
-                    <img src="assets/images/tim-mossholder-xDwEa2kaeJA-unsplash.jpg" alt="farmers harvesting image">
-                </figure>
-            </section>
-            <section class="sec_sect">
-                <figure  class="card_img">
-                    <img src="assets/images/james-baltz-yihX4Rq-JsI-unsplash.jpg" alt="watering plants image">
-                </figure>
-                <figure>
-                    <img class="icon" src="assets/images/7097370_conservation_grow_sustainable_hands_tree_icon.svg"
-                        alt="conservation grow sustainable hands tree image">
-                </figure>
-                <h1>Quality Products</h1>
-                <p>We ensure that small–scale farmers across Kenya and Africa have access to affordable, quality and
-                    eco-friendly farming equipment.</p>
-            </section>
-            <section class="secondary">
+            <section class="sect_secondary">
                 <header>
                     <h3>Why Choose Us</h3>
                     <figure><img src="assets/images/9193510_olive tree_plant_nature_ecology_peace_icon.svg "
                             alt="olive tree plant image"></figure>
                 </header>
                 <h1>Comprehensive Agricultural Offerings</h1>
-                <p>Discover a wide range of high-quality farm products designed to enhance your agricultural endeavors.
-                    We take pride in offering innovative solutions that help you achieve optimal results in your farming
-                    operations. Whether you're a small scale farmer or managing a large scale enterprise in Kenya or
-                    Africa.</p>
-                <div class="card_wrapper">
-                    <div class="card">
-                        <p><span class="bold_txt">100%</span> ecological agricultural products.</p>
+                <section class="primary">
+                    <figure>
+                        <img src="assets/images/daniel-fazio-oK9EKfqv8HE-unsplash.jpg" alt="high tunnel image">
+                    </figure>
+                    <div>
+                        <p>Discover a wide range of high-quality farm products designed to enhance your agricultural
+                            endeavors.
+                            We take pride in offering innovative solutions that help you achieve optimal results in your
+                            farming
+                            operations. Whether you're a small scale farmer or managing a large scale enterprise in
+                            Kenya or
+                            Africa.</p>
+                        <div class="card__wrapper">
+                            <div class="card">
+                                <p><span class="bold_txt">100%</span> ecological agricultural products.</p>
+                            </div>
+                            <div class="card">
+                                <p><span class="bold_txt">100%</span> pocket friendly agricultural products.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <p><span class="bold_txt">100%</span> pocket friendly agricultural products.</p>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1563201515-adbe35c669c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGFncmljdWx0dXJlfGVufDB8fDB8fHww"
+                            alt="tractors farming image">
+                    </figure>
+                </section>
+                <section class="secondary">
+                    <section class="card">
+                        <div class="circle"></div>
+                        <h3>Explore Our Farm Products</h3>
+                        <a class="link" href="#" target="_self" rel="noopener noreferrer"><svg>
+                                <use href="#arrow">
+                            </svg></a>
+                        <p>
+                            Discover a wide range of high-quality farm products designed to enhance your agricultural
+                            endeavors.
+                        </p>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </section>
+                    <ul class="items_list">
+                        <li><span class="count">1</span> Farming Tools and Equipment</li>
+                        <li><span class="count">2</span> Fertilizers and Enhancers</li>
+                        <li><span class="count">3</span> Crop Protection</li>
+                    </ul>
+                    <div>
+                        <p>Choose from a variety of premium and efficient farming equipment to ensure a strong start for
+                            your business.</p>
+                        <p>Enhance farming activities and promote healthy plant growth with our range of organic
+                            fertilizers.</p>
+                        <p>Safeguard your crops from pests and diseases with our range of environmental friendly crop
+                            protection solutions.</p>
                     </div>
-                    <div class="card">
-                        <p><span class="bold_txt">Fast</span> payments with our finance partners using M-Pesa.</p>
-                    </div>
-                    <div class="card">
-                        <p><span class="bold_txt">100%</span> secure browsing with secure services and transactions.</p>
-                    </div>
-                </div>
-              
-                <ul class="items_list">
-                    <li><span class="count">1</span> Farming tools and equipment</li>
-                    <li><span class="count">2</span> Farming machinery</li>
-                    <li><span class="count">3</span> Current technologies</li>
-                </ul>
+                </section>
             </section>
         </main>
+
         <footer class="footer">
             <div class="footer_container">
-                <div >
-                    <div class="logo"><img src="assets/images/8542511_tractor_agriculture_icon.svg"
-                            alt="IKOEasy logo image">IKOEasy</div>
+                <div>
+                    <div class="logo">
+                        <img src="assets/images/8542511_tractor_agriculture_icon.svg"
+                            alt="IKOEasy logo image"><span>IKOEasy</span>
+                    </div>
+
                     <p>Nairobi, Kenya</p>
-                    <p style="display: flex; align-items: center;"><img src="assets/images/9042869_phone_icon.svg" alt="phone icon image" style="width: 25px; background-color: var(--green); padding: .45em; border-radius: 50%; margin-right: .25em;">+254710000000</p>
+                    <p style="display: flex; align-items: center;"><img src="assets/images/9042869_phone_icon.svg"
+                            alt="phone icon image"
+                            style="width: 25px; background-color: var(--green); padding: .45em; border-radius: 50%; margin-right: .25em;">+254710000000
+                    </p>
                 </div>
                 <section class="profile">
                     <h4>Company Profile</h4>
+
                     <nav>
                         <ul>
-                            <li><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                <title />
-                                <g data-name="Layer 2" id="Layer_2">
-                                    <path
-                                        d="M22,9a1,1,0,0,0,0,1.42l4.6,4.6H3.06a1,1,0,1,0,0,2H26.58L22,21.59A1,1,0,0,0,22,23a1,1,0,0,0,1.41,0l6.36-6.36a.88.88,0,0,0,0-1.27L23.42,9A1,1,0,0,0,22,9Z"
-                                        fill="currentColor" />
-                                </g>
-                            </svg><a href="#" target="_self" rel="noopener noreferrer">About</a></li>
-                            <li><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                <title />
-                                <g data-name="Layer 2" id="Layer_2">
-                                    <path
-                                        d="M22,9a1,1,0,0,0,0,1.42l4.6,4.6H3.06a1,1,0,1,0,0,2H26.58L22,21.59A1,1,0,0,0,22,23a1,1,0,0,0,1.41,0l6.36-6.36a.88.88,0,0,0,0-1.27L23.42,9A1,1,0,0,0,22,9Z"
-                                        fill="currentColor" />
-                                </g>
-                            </svg><a href="#" target="_self" rel="noopener noreferrer">Help Center</a></li>
-                            <li><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                <title />
-                                <g data-name="Layer 2" id="Layer_2">
-                                    <path
-                                        d="M22,9a1,1,0,0,0,0,1.42l4.6,4.6H3.06a1,1,0,1,0,0,2H26.58L22,21.59A1,1,0,0,0,22,23a1,1,0,0,0,1.41,0l6.36-6.36a.88.88,0,0,0,0-1.27L23.42,9A1,1,0,0,0,22,9Z"
-                                        fill="currentColor" />
-                                </g>
-                            </svg><a href="#" target="_self" rel="noopener noreferrer">Contact</a></li>
+                            <li><svg>
+                                    <use href="#arrow">
+                                </svg><a href="#" target="_self" rel="noopener noreferrer">About</a></li>
+                            <li><svg>
+                                    <use href="#arrow">
+                                </svg><a href="#" target="_self" rel="noopener noreferrer">Help Center</a></li>
+                            <li><svg>
+                                    <use href="#arrow">
+                                </svg><a href="#" target="_self" rel="noopener noreferrer">Contact</a></li>
                         </ul>
                     </nav>
                 </section>
@@ -158,12 +204,13 @@
                                         alt="facebook icon image">
                                 </a></li>
                             <li><a href="#" target="_self" rel="noopener noreferrer">
-                                    <img src="assets/images/5335781_camera_instagram_social media_instagram logo_icon.svg">
+                                    <img
+                                        src="assets/images/5335781_camera_instagram_social media_instagram logo_icon.svg">
                                 </a></li>
                         </ul>
                     </nav>
                 </section>
-                
+
                 <div class="terms_text"><span>Terms And Conditions</span> | <span>Privacy Policy</span></div>
                 <div class="copyright_text">&copy; IKOEasy Company Limited</div>
             </div>
